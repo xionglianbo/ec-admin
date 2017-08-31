@@ -32,4 +32,10 @@ Vagrant.configure("2") do |config|
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
 
+  config.vm.provision :ansible do |ansible|
+    ansible.playbook = '.provisioning/playbook.yml'
+    ansible.inventory_path = '.provisioning/hosts.vagrant'
+    ansible.limit = 'all'
+    ansible.host_key_checking = false
+  end
 end
