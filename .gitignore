@@ -1,3 +1,13 @@
-.env
+# ansible
 .provisioning/roles/*
+
+# vagrant
 .vagrant/*
+
+# laravel
+.env
+.idea
+node_modules
+public/storage
+storage/*.key
+vendor

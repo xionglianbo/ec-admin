@@ -7,6 +7,7 @@
     - { role: juwai.nginx,           tags: ['all', 'nginx'] }
     - { role: geerlingguy.php,       tags: ['all', 'php'] }
     - { role: geerlingguy.composer,  tags: ['all', 'composer'] }
+    - { role: juwai.laravel,         tags: ['all', 'laravel'] }
 
   pre_tasks:
     - set_fact:

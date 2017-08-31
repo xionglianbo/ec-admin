@@ -4,7 +4,7 @@ dot_env:
     - { key: 'app_key', value: 'base64:JbzO7/YbZwm7l6ISfb3/7Mo3MBVuklBawpCt7pceDi8=' }
     - { key: 'app_debug', value: 'true' }
     - { key: 'app_log_level', value: 'debug' }
-    - { key: 'app_url', value: 'http://127.0.0.1:6002' }
+    - { key: 'app_url', value: 'http://127.0.0.1:6003' }
     - { key: 'db_connection', value: 'mysql' }
     - { key: 'db_host', value: '127.0.0.1' }
     - { key: 'db_username', value: 'root' }
@@ -15,7 +15,7 @@ dot_env:
 
 env: 'vagrant'
 
-nginx_port: 6002
+nginx_port: 6003
 
 php_enablerepo: 'webtatic'
 php_fpm_conf_path: '/etc/php-fpm.conf'

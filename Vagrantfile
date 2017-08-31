@@ -10,6 +10,16 @@ Vagrant.configure("2") do |config|
   config.vm.network :private_network, ip: "192.168.111.3"
   config.vm.network "forwarded_port", guest: 6003, host: 6003
 
+  config.vm.synced_folder "bootstrap/cache", "/vagrant/bootstrap/cache",
+    owner: "vagrant",
+    group: "vagrant",
+    mount_options: ["dmode=777,fmode=777"]
+
+  config.vm.synced_folder "storage", "/vagrant/storage",
+    owner: "vagrant",
+    group: "vagrant",
+    mount_options: ["dmode=777,fmode=777"]
+
   host = RbConfig::CONFIG['host_os']
 
   if Vagrant.has_plugin?("vagrant-vbguest")
