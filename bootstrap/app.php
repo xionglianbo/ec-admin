@@ -41,6 +41,11 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+$customPath = '/var/log/ec-admin';
+if (file_exists($customPath)) {
+        $app->useStoragePath($customPath);
+}
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application
