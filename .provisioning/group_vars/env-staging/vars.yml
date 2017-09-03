@@ -4,4 +4,4 @@ env: 'staging'
 
 php_opcache_enable: no
 
-server_name: '~^mobile-api(?:-v2)?\.juwai\.io$ ~^(?<vhost>.+)\.mobile-api(?:-v2)?\.juwai\.io$'
+server_name: '~^ec-admin\.nuoxiangcun\.com$ ~^(?<vhost>.+)\.ec-admin\.nuoxiangcun\.com$'
